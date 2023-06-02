@@ -1,0 +1,76 @@
+[
+    {
+        "id": "width",
+        "label": "Width Override",
+        "type": "number",
+        "default": 0,
+        "attrs": {
+            "min": 0,
+            "max": 3000
+        }
+    },
+    {
+        "id": "height",
+        "label": "Height Override",
+        "type": "number",
+        "default": 0,
+        "attrs": {
+            "min": 0,
+            "max": 3000
+        }
+    },
+    {
+        "id": "mode",
+        "label": "Mode",
+        "type": "select",
+        "default": "Quadratic",
+        "options": [
+            "Quadratic",
+            "Circle",
+            "Coloured Quadratic"
+        ]
+    },
+    {
+        "id": "colours",
+        "label": "Colours",
+        "type": "collection",
+        "expandable": true,
+        "fields": [
+            {
+                "label": "Colour",
+                "type": "color",
+                "initial": 2,
+                "attrs": {
+                    "min": 0,
+                    "max": 4,
+                    "step": 1
+                }
+            }
+        ],
+        "default": [
+            [
+                "E70000"
+            ],
+            [
+                "FF8C00"
+            ],
+            [
+                "FFEF00"
+            ],
+            [
+                "00811F"
+            ],
+            [
+                "0044FF"
+            ],
+            [
+                "760089"
+            ]
+        ]
+    },
+    {
+        "id": "redraw",
+        "type": "button",
+        "text": "Redraw"
+    }
+]
